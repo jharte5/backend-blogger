@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const MongoStore = require('connect-mongo');
 require('dotenv').config();
 
-const blogRouter = require('./routes/index');
+const blogRouter = require('./routes/blog');
 // const usersRouter = require('./routes/users');
 
 const app = express();
