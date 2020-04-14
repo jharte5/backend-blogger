@@ -1,11 +1,10 @@
 const mongoose = require('mongoose')
 
 const BlogSchema = new mongoose.Schema({
-    title:{String, uniquers: true},
-    author:{String},
-    subject:{String},
-    article:{String},
-    objectId:{String, unique: true}
+    title:{type: String, unique: true},
+    author:{type:String},
+    subject:{type:String},
+    article:{type:String}
 });
 
 module.exports = mongoose.model('Blog', BlogSchema)

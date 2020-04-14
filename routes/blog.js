@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/getAllBlogs',  (req,res) => {
   // res.render('getBlogs')
-  Blog.find({objectID})
+  Blog.find({})
   .then((blogs) => {
     return res.render('showBlogs', {blogs: blogs})
   })
