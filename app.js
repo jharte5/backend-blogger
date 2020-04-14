@@ -4,7 +4,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-const MongoStore = require('connect-mongo');
 require('dotenv').config();
 
 const blogRouter = require('./routes/blog');
